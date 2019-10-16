@@ -8,10 +8,16 @@ Using `Modal` and `Picker` component for IOS and using `RecyclerView` and `Alert
 
 <img src="./docs/android-picker-module.png"> <img src="./docs/ios-picker-module.png">
 
-### v1.2.0 now has AndroidX support. If you want to use this package without AndroidX support please use v1.1.1
-#### Facebook RN blog post about v0.60 and AndroidX support: [https://facebook.github.io/react-native/blog/2019/07/03/version-60](https://facebook.github.io/react-native/blog/2019/07/03/version-60)
+## Our fork information
+
+Inerva fork tidied up a few bugs and added support for objects.
+
+
+
+## Change log
 
 ### Version 1.2.0
+
 - [https://github.com/talut/react-native-picker-module/pull/9](https://github.com/talut/react-native-picker-module/pull/9) Merged
 - AndroidX support added.
 
@@ -72,15 +78,10 @@ react-native link react-native-picker-module
 import ReactNativePickerModule from 'react-native-picker-module'
 
 state = {
-    selectedValue: null,
+    selectedValue: 'js',
     data: [
-        "Javascript",
-        "Go",
-        "Java",
-        "Kotlin",
-        "C++",
-        "C#",
-        "PHP"
+        {label:"Javascript", value:'js'},
+        {label:"Go", value:'go'},
     ]
 };
 
